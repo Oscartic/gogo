@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% #Turbolinks hace que se carhe mas rapido los enlaces por que no carga todo el contenido, solamente partes de la hoja %>
   </head>
 
   <body>
@@ -14,3 +15,4 @@
     <%= yield %>
   </body>
 </html>
+<% #assets pipelines: se encarga de la gestion de css y jabascript y todo lo relacionado con el preprocesamiento. %>
